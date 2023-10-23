@@ -148,6 +148,7 @@ aside .toggle .close{
 }
 
 aside .sidebar{
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     background-color: var(--color-white);
@@ -222,6 +223,31 @@ aside .sidebar .message-count{
 
 main{
     margin-top: 1.4rem;
+}
+
+main .head_title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .head_title .search{
+    margin-right: 1rem;
+    position: relative;
+}
+
+main .head_title .search .icon_search{
+    position: absolute;
+    top : 50%;
+    left: 1.5rem;
+    transform: translate(-50% , -50%);
+}
+
+main .head_title .search input{
+    width: 30rem;
+    height: 2.5rem;
+    padding: 0 2.5rem;
+    border-radius: var(--border-radius-2);
 }
 
 main .analyse{
